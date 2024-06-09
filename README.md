@@ -167,3 +167,8 @@ npm run dev
     - interface EmitsでEmitの定義をします
     - 今回はbuttonのv-on:clickにemitの実行をする関数(emit("createNewRand"))を紐づけます
     - 親コンポーネントからv-onでEmit定義に関数を紐づけます（ランダム値生成）
+- Emitsで値を渡す
+    - emit(ラベル, 値)
+        - ラベル： v-onで指定するラベル(v-on:ラベル名)
+        - 値：親に渡す変数（例では要素を特定するIDを返している）
+    - Emitsのインタフェースの定義にも第２引数の内容を定義しておく必要がある
