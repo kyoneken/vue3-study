@@ -163,3 +163,7 @@ npm run dev
     - propsの属性(props.point)への操作はできない（読み取り専用）
     - 一旦別のリアクティブ変数にコピーして利用する
     - ただし親コンポーネントにはそのまま反映することはできない(後述)
+- 子コンポーネントから親コンポーネントへの通信にはemitを使う(components-emit-basics参考)
+    - interface EmitsでEmitの定義をします
+    - 今回はbuttonのv-on:clickにemitの実行をする関数(emit("createNewRand"))を紐づけます
+    - 親コンポーネントからv-onでEmit定義に関数を紐づけます（ランダム値生成）
