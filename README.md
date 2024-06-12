@@ -177,3 +177,9 @@ npm run dev
     - v-modelとするだけでPropsのデータがEmitによる変更対象となる
     - 構文(emit("update:Prop名", 値))
         - update:を利用したEmit定義があると覚える
+- provideとinject
+    - provide("Provide名", 値)
+    - 値はreactive関数で渡すと全コンポーネントでリアクティブ変数として使用できる
+        - ref()だとinject先でvalueプロパティにアクセスするのができない（Typescriptの場合）
+    - inject("Provide名") as 型
+    - 型アサーションをすることで各プロパティにアクセスできる
