@@ -183,3 +183,7 @@ npm run dev
         - ref()だとinject先でvalueプロパティにアクセスするのができない（Typescriptの場合）
     - inject("Provide名") as 型
     - 型アサーションをすることで各プロパティにアクセスできる
+
+### Chap08(コンポーネント間の連携)
+
+- slotタグで親要素から渡されたHTML要素を子コンポーネントで表示できる
